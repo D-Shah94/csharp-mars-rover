@@ -1,6 +1,8 @@
-﻿namespace MarsRover.Tests;
+﻿using MarsRover.Console.Models;
 
-public class InstructionParserTests
+namespace MarsRover.Tests.ModelsTests;
+
+public class PositionTests
 {
     [SetUp]
     public void Setup()

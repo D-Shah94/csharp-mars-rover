@@ -4,10 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MarsRover.Console.InputLayer
+namespace MarsRover.Console.Models
 {
-    public class ParsePlateau()
-    {
+    public class Position(int x, int y, CardinalDirection facingDirection);
 
-    }
 }

@@ -1,6 +1,8 @@
-﻿namespace MarsRover.Tests;
+﻿using MarsRover.Console.Input;
 
-public class PlateauParserTests
+namespace MarsRover.Tests.InputLayerTests;
+
+public class InstructionParserTests
 {
     [SetUp]
     public void Setup()

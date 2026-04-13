@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MarsRover.Console.InputLayer
+namespace MarsRover.Console.Models
 {
     public enum Instruction
     {
-        L,
-        R,
-        M
+        L, // 0
+        R, // 1
+        M // 2
     }
 }

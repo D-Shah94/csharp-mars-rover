@@ -1,19 +1,14 @@
-﻿using MarsRover.Console.InputLayer;
-using Shouldly;
-namespace MarsRover.Tests;
+﻿using MarsRover.Console.Models;
 
+namespace MarsRover.Tests.ModelsTests;
 
 public class CardinalDirectionTests
 {
-    [SetUp]
-    public void Setup()
-    {
-    }
 
     [TestCase(CardinalDirection.N, 0)]
-    [TestCase(CardinalDirection.S, 1)]
-    [TestCase(CardinalDirection.W, 2)]
-    [TestCase(CardinalDirection.E, 3)]
+    [TestCase(CardinalDirection.E, 1)]
+    [TestCase(CardinalDirection.S, 2)]
+    [TestCase(CardinalDirection.W, 3)]
 
     [Test]
     public void CardinalDirection_ShouldMapToSpecificIntegers(CardinalDirection direction, int expectedValue)
@@ -27,14 +22,14 @@ public class CardinalDirectionTests
 
 
     [TestCase("N", CardinalDirection.N)]
+    [TestCase("E", CardinalDirection.E)]
     [TestCase("S", CardinalDirection.S)]
     [TestCase("W", CardinalDirection.W)]
-    [TestCase("E", CardinalDirection.E)]
 
     [Test]
     public void CardinalDirection_ShouldParseFromValidStrings(string input, CardinalDirection expected)
     {
-        // Act
+        // Arrange & Act
         var result = Enum.Parse<CardinalDirection>(input);
 
         // Assert

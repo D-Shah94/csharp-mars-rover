@@ -1,14 +1,9 @@
-﻿using MarsRover.Console.InputLayer;
+﻿using MarsRover.Console.Models;
 
-namespace MarsRover.Tests;
+namespace MarsRover.Tests.ModelsTests;
 
 public class InstructionTests
 {
-    [SetUp]
-    public void Setup()
-    {
-    }
-
     [TestCase(Instruction.L, 0)]
     [TestCase(Instruction.R, 1)]
     [TestCase(Instruction.M, 2)]

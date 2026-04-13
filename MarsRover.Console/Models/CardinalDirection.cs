@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MarsRover.Console.InputLayer
+namespace MarsRover.Console.Models
 {
     public enum CardinalDirection
     {
         N, // 0
-        S, // 1
-        W, // 2
-        E  // 3
+        E, // 1
+        S, // 2
+        W  // 3
     }
 }
