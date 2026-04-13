@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace MarsRover.Console.InputLayer
 {
-    enum CompassDirection
+    public record PlateauSize(int X, int Y)
     {
-        N,
-        S,
-        W,
-        E
+        public int[,] Grid { get; init; } = new int[X, Y];
     }
 }

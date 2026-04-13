@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace MarsRover.Console.InputLayer
 {
-    public enum Instruction
+    public enum CardinalDirection
     {
-        L,
-        R,
-        M
+        N,
+        S,
+        W,
+        E
     }
 }
