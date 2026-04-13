@@ -12,6 +12,10 @@ namespace MarsRover.Console.InputLayer
         public int Y { get; set; } = y;
         public CardinalDirection FacingDirection { get; set; } = facingDirection;
 
+
+        // Tuple syntax for 3D Multidimensional-array
+        public (int x, int y, int dir) CoordatesAndOrientation => (X, Y, (int)FacingDirection);
+
     }
 
 }

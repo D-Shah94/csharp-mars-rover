@@ -8,6 +8,6 @@ namespace MarsRover.Console.InputLayer
 {
     public record PlateauSize(int X, int Y)
     {
-        public int[,] Grid { get; init; } = new int[X, Y];
+        public int[,] Grid { get; init; } = new int[X + 1, Y + 1];
     }
 }
