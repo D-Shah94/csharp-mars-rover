@@ -8,9 +8,9 @@ namespace MarsRover.Console.InputLayer
 {
     public class Position(int x, int y, CardinalDirection facingDirection)
     {
-        public int X = x;
-        public int Y = y;
-        public CardinalDirection Direction = facingDirection;
+        public int X { get; set; } = x;
+        public int Y { get; set; } = y;
+        public CardinalDirection FacingDirection { get; set; } = facingDirection;
 
     }
 
