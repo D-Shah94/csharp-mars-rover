@@ -2,7 +2,7 @@
 
 namespace MarsRover.Console.Input
 {
-    public class InstructionParser()
+    public class InstructionParser
     {
         public static List<Instruction> Parse(string input)
         {
