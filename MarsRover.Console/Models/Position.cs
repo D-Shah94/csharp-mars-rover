@@ -6,6 +6,6 @@ using System.Threading.Tasks;
 
 namespace MarsRover.Console.Models
 {
-    public class Position(int x, int y, CardinalDirection facingDirection);
+    public record Position(int X, int Y, CardinalDirection FacingDirection);
 
 }

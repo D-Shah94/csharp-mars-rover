@@ -4,25 +4,40 @@ namespace MarsRover.Tests.ModelsTests;
 
 public class PlateauSizeTests
 {
-    [SetUp]
-    public void Setup()
+
+    [TestCase(5, 5)]
+    [TestCase(10, 20)]
+
+    [Test]
+    public void PlateauSize_ShouldCorrectlyAssignDimensions(int inputX, int inputY)
     {
+        // Arrange
+
+        // Act
+        var plateau = new PlateauSize(inputX, inputY);
+
+        // Assert
+        Assert.Multiple(() =>
+        {
+            Assert.That(plateau.MaxX, Is.EqualTo(inputX), "The MaxX property was not assigned correctly.");
+            Assert.That(plateau.MaxY, Is.EqualTo(inputY), "The MaxY property was not assigned correctly.");
+
+        });
+
     }
 
 
-    //[TestCase(5, 6, 5, 2, 6, 2)]
-    //[TestCase(7, 6, 6, 10, 6, 6)]
-    //[TestCase(100, 50, 50, 0, 10, 0)]
 
-    //[Test]
-    //public void ShouldVerifyMaxValuesAreInEffect(int xInput, int xLimit, int yInput, int yLimit, int xExpected, int yExpected)
-    //{
-    //    int actualX = Math.Min(xInput, xLimit);
-    //    int actualY = Math.Min(yInput, yLimit);
+    [Test]
+    public void Two_Plateaus_With_Same_Dimensions_Should_Be_Equal()
+    {
 
-    //    // Assert
-    //    Assert.That(actualX, Is.EqualTo(xExpected));
-    //    Assert.That(actualY, Is.EqualTo(yExpected));
+        // Act
+        var plateau1 = new PlateauSize(5, 5);
+        var plateau2 = new PlateauSize(5, 5);
 
-    //}
+        // Assert
+        Assert.That(plateau1, Is.EqualTo(plateau2));
+
+    }
 }
