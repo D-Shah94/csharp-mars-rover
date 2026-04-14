@@ -1,6 +1,6 @@
 ﻿using MarsRover.Console.Input;
 
-namespace MarsRover.Tests.InputLayerTests;
+namespace MarsRover.Tests.InputTests;
 
 public class PlateauParserTests
 {
